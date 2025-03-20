@@ -1,0 +1,72 @@
+# Maven target klasörü
+/target/
+
+# IDE ve Editör Dosyaları
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Loglar ve Geçici Dosyalar
+*.log
+hs_err_pid*
+
+# Maven Önbelleği
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Maven Wrapper
+mvnw
+mvnw.cmd
+
+# Test Raporları
+/surefire-reports/
+/failsafe-reports/
+
+# Spring Boot Spesifik
+/*.jar
+/*.war
+/*.ear
+
+# Ortam Değişkenleri ve Yapılandırma Dosyaları
+.env
+application-*.yml
+application-*.properties
+
+# Kullanıcı Özgü Dosyalar
+*.swp
+*.swo
+*.bak
+
+# Build Araçları
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# H2 Veritabanı Dosyaları
+*.mv.db
+*.h2.db
+
+# Profil Bazlı Yapılandırmalar
+*.local.*
+*.test.*
+
+# Diğer
+node_modules/
+
+# Paketleme ve Dağıtım
+*.zip
+*.tar.gz
+
