@@ -1,6 +1,8 @@
 package dev.emir.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 
@@ -13,9 +15,11 @@ public class Customer {
     private int id;
 
     @Column(name = "customer_name",length = 20, nullable = false)
+    @NotNull
     private String name;
 
     @Column(name = "customer_mail",nullable = false,unique = true)
+    @Email(message = "Please enter a valid email address")
     private String mail;
 
     @Temporal(TemporalType.DATE)

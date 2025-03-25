@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomerDtoConverter {
 
-    public CustomerDto convertDto(Customer customer) {
+    public CustomerResponse convertDto(Customer customer) {
 
-        return new CustomerDto(customer.getId(),customer.getName(),customer.getMail());
+        return new CustomerResponse(customer.getId(),customer.getName(),customer.getMail());
 
     }
 }

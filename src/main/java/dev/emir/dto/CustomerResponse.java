@@ -1,19 +1,24 @@
 package dev.emir.dto;
 
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+
 // Customer --> CustomerDTO
-public class CustomerDto {
+public class CustomerResponse {
     private int id;
+    @NotNull
     private String name;
+    @Email
     private String mail;
 
-    public CustomerDto(int id, String name, String mail) {
+    public CustomerResponse(int id, String name, String mail) {
         this.id = id;
         this.name = name;
         this.mail = mail;
     }
 
-    public CustomerDto() {
+    public CustomerResponse() {
     }
 
     public int getId() {
